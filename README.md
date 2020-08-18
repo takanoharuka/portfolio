@@ -22,3 +22,36 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## userテーブル
+
+|Column|Type|Option|
+|------|----|------|
+|nickname|string|null: false|
+|email|string|null: false|
+|password|string|null: false|
+
+- has_many: tweets
+- has_many: comments
+
+## tweetテーブル
+
+|Column|Type|Option|
+|------|----|------|
+|image|string|null: false|
+|text|text|null: false|
+|user_id|integer|null: false, foreign_key: true|
+
+- belongs_to: user
+- has_many: comments
+
+## commentテーブル
+
+|Column|Type|Option|
+|------|----|------|
+|comment|text||
+|user_id|integer|null: false, foreign_key: true|
+|tweet_id|integer|null: false, foreign_key: true|
+
+- belongs_to: user
+- belongs_to: tweet
