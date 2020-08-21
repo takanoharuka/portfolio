@@ -1,0 +1,11 @@
+<div class="contents-row">
+  <div class="contents">
+    <h3 class= "post-title">To Post</h3>
+      <%= form_with model: @tweet , class: "form", local: true do |form| %>
+        <%= form.text_field :image, placeholder:"Img Url" ,class:"image" %>
+        <%= form.text_field :title, placeholder:"Title" ,class:"title" %>
+        <%= form.text_area :text, placeholder:"Text", class:"text" %>
+        <%= form.submit "SEND", class:"submit-btn" %>
+      <% end %>
+  </div>
+</div>

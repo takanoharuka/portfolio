@@ -10,6 +10,25 @@
   </head>
 
   <body>
-    <%= yield %>
+  <header class= "header">
+    <div class= "header-right">
+      <ul class= "header-list">
+        <li><%= link_to 'Nickname','#', class: "user-nickname" %></li>
+        <li><%= link_to 'Log out', '#', class: "logout"%></li>
+      </ul>
+    
+      <%# <ul class= "header-list">
+        <li><%= link_to 'Login','#', class: "login" %></li>
+        <%# <li><%= link_to 'Sign up','#', class: "sign-up" %></li>
+      </ul> 
+    </div>
+
+  </header>
+  <%= yield %>
+  
+  <div class= "footer" >
+    <a class="footer-btn" href= "/">Save The Earth</a>
+    
+  </div>
   </body>
 </html>
