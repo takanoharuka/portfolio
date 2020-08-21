@@ -1,0 +1,135 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.header{
+  width: 100vw;
+  height: 70px;
+  background-color: #9e8a6b;
+  position: relative;
+  .header-right{
+    height: 70px;
+    width: 300px;
+    position: absolute;
+    right: 0px;
+    .header-list{
+      height: 70px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .user-nickname{
+        text-decoration: none;
+        border: 1px solid #ffffff;
+        padding: 15px;
+        color: #ffffff;
+      }
+      .logout{
+        text-decoration: none;
+        border: 1px solid #ffffff;
+        padding: 15px;
+        margin-right: 15px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.main{
+  width: 100vw;
+  // height: 100vh;
+  background-color: #e9d5b6;
+  .main-image{
+    background-image: image-url('earth.jpeg');
+    width: 100vw;
+    height: 270px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    border-bottom: solid 2px #1c4428;
+    .main-title{
+      font-size: 65px;
+      color: #3a250d;
+      font-family: serif;
+      text-shadow: 3px 3px 2px rgb(243, 207, 117);
+      position: absolute;
+      bottom: 20px;
+      left: 100px;
+      
+    }
+  }
+  .search-form{
+    text-align: center;
+    padding: 20px 0px;
+    .input-search{
+      padding: 10px;
+      width: 30%;
+    }
+    .submit-btn{
+      width: 8%;
+      padding: 10px;
+    }
+  }
+  .tweets-contents{
+    width: 100vw;
+    height: calc(100vh - 270px);
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    .tweets-lists{
+      height: calc(100vh - 270px);
+      margin-left: auto;
+      margin-right: auto;
+      width: 80vw;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #f5e6c5;
+      .lists{
+        width: 40vh;
+        height: 200px;
+        background-color: #ffffff;
+        margin-top: 100px;
+        .tweets-img-contents{
+          position: relative;
+        }
+        .tweets-info{
+          color: black;
+          .tweets-username{
+            font-size: 5px;
+          }
+          .tweets-title{
+            font-size: 5px;
+          }
+        }
+      }
+    }
+  }
+  .tweet-btn{
+    width: 120px;
+    background-color: #243523;
+    text-align: center;
+    border-radius: 15%;
+    bottom: 100px;
+    right: 2px;
+    position: fixed;
+    padding: 13px 10px;
+    .tweet-btn-text{
+      color: #ffffff;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  }
+}
+
+
+.footer{
+  background-color: #9e8a6b;
+  height: 40px;
+  text-align: center;
+  padding: 30px;
+  .footer-btn{
+    text-decoration: none;
+    color: black;
+  }
+}
+
