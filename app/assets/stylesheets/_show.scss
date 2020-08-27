@@ -1,0 +1,41 @@
+.tweet-show{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(136, 129, 108);
+  .tweet-box{
+    width: 70vw;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: ivory;
+    overflow: scroll;
+    .tweet-title{
+      text-align: center;
+      padding: 40px;
+      color: rgb(58, 55, 26);
+      font-size: 30px;
+    }
+    .tweet-img-content{
+      position: relative;
+      text-align: center;
+      .tweet-box-img{
+        width: 50vw;
+        height: 50vh;
+      }
+    }
+    .tweet-text{
+      width: 40vw;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 50px;
+    }
+    .comment-box{
+      text-align: center;
+      .comment-text{
+        width: 30vw;
+        height: 10vh;
+        padding: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+
+.new-user{
+  width: 100%;
+  background-color: rgb(223, 206, 180);
+  .sign_up{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+  }
+  .field{
+    text-align: center;
+    margin: 60px;
+    .nickname{
+      width: 18%;
+    }
+  }
+  .actions{
+    text-align: center;
+    .sign_up_btn{
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+  }
+}

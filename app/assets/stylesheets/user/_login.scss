@@ -1,0 +1,22 @@
+.login_user{
+  width: 100vw;
+  // height: 100vh;
+  background-color: rgb(223, 206, 180);
+  .log_in{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+  }
+  .field{
+    text-align: center;
+    padding: 60px;
+  }
+  .actions{
+    text-align: center;
+    .log_in_btn{
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+  }
+  
+}

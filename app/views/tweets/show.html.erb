@@ -1,0 +1,18 @@
+<div class="tweet-show">
+  <div class="tweet-box">
+    <h2 class="tweet-title">
+      <%= @tweet.title %>
+    </h2>
+    <div class="tweet-img-content">
+      <%= image_tag @tweet.image, class:"tweet-box-img" %>
+    </div>
+    <div class="tweet-text">
+      <%= @tweet.text %>
+    </div>
+    <div class= "comment-box">
+      <form>
+        <textarea class="comment-text", placeholder="comments"></textarea>
+      </form>
+    </div>
+  </div> 
+</div>

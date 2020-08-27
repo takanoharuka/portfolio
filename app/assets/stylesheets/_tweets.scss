@@ -31,6 +31,19 @@
         margin-right: 15px;
         color: #ffffff;
       }
+      .login{
+        text-decoration: none;
+        border: 1px solid #ffffff;
+        padding: 15px;
+        color: #ffffff;
+      }
+      .sign-up{
+        text-decoration: none;
+        border: 1px solid #ffffff;
+        padding: 15px;
+        margin-right: 15px;
+        color: #ffffff;
+      }
     }
   }
 }
@@ -72,12 +85,12 @@
   }
   .tweets-contents{
     width: 100vw;
-    height: calc(100vh - 270px);
+    // height: calc(100vh - 270px);
     display: flex;
     flex-direction: column;
     overflow: scroll;
     .tweets-lists{
-      height: calc(100vh - 270px);
+      // height: calc(100vh - 270px);
       margin-left: auto;
       margin-right: auto;
       width: 80vw;
@@ -86,19 +99,24 @@
       background-color: #f5e6c5;
       .lists{
         width: 40vh;
-        height: 200px;
-        background-color: #ffffff;
-        margin-top: 100px;
-        .tweets-img-contents{
+        // height: 200px;
+        margin: 30px;
+        .tweets-image-contents{
           position: relative;
+          .tweet-image{
+            width: 40vh;
+            height: 33vh;
+          }
         }
         .tweets-info{
-          color: black;
+          background-color: ivory;
+          text-align: center;
+          color: rgb(34, 22, 22);
           .tweets-username{
-            font-size: 5px;
+            font-size: 10px;
           }
           .tweets-title{
-            font-size: 5px;
+            font-size: 15px;
           }
         }
       }
