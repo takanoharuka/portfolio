@@ -10,18 +10,23 @@
   </form>
   <div class= "tweets-contents">
     <ul class= "tweets-lists">
+    <% @tweets.each do |tweet| %>
       <li class= "lists">
-        <%# link_to "#", do %>
+        <%= link_to tweet_path(tweet.id) do %>
         <div class= "tweets-image-contents">
-          <%# image_tag "#", class: "tweet-image"%>
+          <%= image_tag tweet.image, class: "tweet-image"%>
         </div>
         <div class= "tweets-info">
           <h3 class= "tweets-username">
+            <%= tweet.user.nickname %>
           </h3>
           <div class= "tweets-title">
+            <%= tweet.title %>
           </div>
         </div>
+        <% end %>
       </li>
+    <% end %>
     </ul>
     <div class= "tweet-btn">
       <a class="tweet-btn-text" href= "/tweets/new">NEW<br>POST</a>
