@@ -99,13 +99,39 @@
       background-color: #f5e6c5;
       .lists{
         width: 40vh;
-        // height: 200px;
         margin: 30px;
         .tweets-image-contents{
           position: relative;
           .tweet-image{
             width: 40vh;
             height: 33vh;
+          }
+          .show{
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            height: 100px;
+            width: 80px;
+            text-align: right;
+            cursor: pointer;
+            .icon{
+              color: #f8f7f0;
+              font-size: 1.5em;
+            }
+            
+            .show_list{
+              width: 50px;
+              text-align: center;
+              background-color: #ffffff;
+              position: absolute;
+              top: 25px;
+              right: 0;
+              display: none;
+            }
+            
+          }
+          .show:hover .show_list{
+            display: inline;
           }
         }
         .tweets-info{
