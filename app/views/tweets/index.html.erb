@@ -15,6 +15,19 @@
         <%= link_to tweet_path(tweet.id) do %>
         <div class= "tweets-image-contents">
           <%= image_tag tweet.image, class: "tweet-image"%>
+            <div class= "show">
+              <% if user_signed_in? && current_user.id == tweet.user_id %>
+                <span class="fas fa-angle-double-down icon"></span>
+                <ul class="show_list">
+                  <li>
+                    <%= link_to "編集", edit_tweet_path(tweet.id), method: :get %>
+                  </li>
+                  <li>
+                    <%= link_to "削除", tweet_path(tweet.id), method: :delete %>
+                  </li>
+                </ul>
+              <% end %>
+            </div>
         </div>
         <div class= "tweets-info">
           <h3 class= "tweets-username">
