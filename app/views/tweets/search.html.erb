@@ -1,0 +1,16 @@
+
+<div class="tweet-show">
+  <div class="tweet-box">
+    <% @tweets.each do |tweet| %> 
+      <h2 class="tweet-title">
+        <%= tweet.title %>
+      </h2>
+      <div class="tweet-img-content">
+        <%= image_tag tweet.image, class:"tweet-box-img" %>
+      </div>
+      <div class="tweet-text">
+        <%= tweet.text %>
+      </div>
+    <% end %>
+  </div> 
+</div>
