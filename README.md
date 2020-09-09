@@ -51,8 +51,8 @@ Things you may want to cover:
 |Column|Type|Option|
 |------|----|------|
 |comment|text||
-|user_id|integer|null: false, foreign_key: true|
-|tweet_id|integer|null: false, foreign_key: true|
+|user_id|integer||
+|tweet_id|integer||
 
 - belongs_to: user
 - belongs_to: tweet

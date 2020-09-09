@@ -9,6 +9,13 @@
     margin-right: auto;
     background-color: ivory;
     overflow: scroll;
+
+    .top-icon{
+      text-decoration: none;
+      font-size: 2em;
+      color: #454e3b;
+      margin: 30px;
+    }
     .tweet-title{
       text-align: center;
       padding: 40px;
@@ -16,7 +23,7 @@
       font-size: 30px;
     }
     .tweet-img-content{
-      position: relative;
+      // position: relative;
       text-align: center;
       .tweet-box-img{
         width: 50vw;
@@ -27,6 +34,7 @@
       width: 40vw;
       margin-left: auto;
       margin-right: auto;
+      text-align: center;
       padding: 50px;
     }
     .comment-box{
@@ -35,6 +43,38 @@
         width: 30vw;
         height: 10vh;
         padding: 10px;
+      }
+      .send-btn{
+        display: block;
+        background-color: #a09876;
+        margin: 15px auto;
+        width: 10vw;
+        height: 5vh;
+        border: 1px solid #ffffff;
+      }
+      .comments{
+        width: 40vw;
+        margin: 0 auto;
+        
+        .comments-title{
+          display: flex;
+          align-items: flex-start;
+          margin: 10px;
+        }
+        .comment-name{
+          display: flex;
+          margin: 10px;
+        }
+        .delete{
+          display: flex;
+          justify-content: flex-end;
+        }
+        .delete-btn{
+          width: 70px;
+          text-decoration: none;
+          border: 1px solid blueviolet;
+          margin: 10px;
+        }
       }
     }
   }

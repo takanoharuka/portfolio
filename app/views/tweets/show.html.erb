@@ -1,5 +1,6 @@
 <div class="tweet-show">
   <div class="tweet-box">
+  <a class="far fa-arrow-alt-circle-left top-icon", href="/"></a>
     <h2 class="tweet-title">
       <%= @tweet.title %>
     </h2>
@@ -10,9 +11,29 @@
       <%= @tweet.text %>
     </div>
     <div class= "comment-box">
-      <form>
-        <textarea class="comment-text", placeholder="comments"></textarea>
-      </form>
+      <% if current_user %>
+        <%= form_with(model: [@tweet, @comment], local: true) do |form| %>
+          <%= form.text_area :comment, class:"comment-text", placeholder:"comments" %>
+          <%= form.submit "SEND" , class:"send-btn"%>
+        <% end %>
+      <% else %>
+        <strong><p>〜コメントの投稿には新規登録/ユーザー登録が必要です〜</p></strong>
+      <% end %>
+
+      <div class="comments">
+        <h4 class="comments-title">＜コメント一覧＞</h4>
+        <% if @comments %>
+          <% @comments.each do |comment| %>
+            <p class= "comment-name">
+              <%= comment.user.nickname %> : 
+              <%= comment.comment %>
+              <% if user_signed_in? && comment.user_id == current_user.id %>
+                <p class ="delete"><%= link_to "削除", tweet_comment_path(comment.tweet.id, comment.id), method: :delete , class:"delete-btn"%></p>
+              <% end %>
+            </p>
+          <% end %>
+        <% end %>
+      </div>
     </div>
   </div> 
 </div>
