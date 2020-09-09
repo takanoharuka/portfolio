@@ -9,6 +9,13 @@
     background-color: #887f5a;
     height: 100vh;
     padding: 30px;
+    overflow: scroll;
+
+    .top-icon{
+      text-decoration: none;
+      font-size: 2em;
+      color: #ffffff;
+    }
     
     .post-title{
       font-size: 40px;
@@ -38,11 +45,12 @@
           padding: 10px;
         }
         .submit-btn{
-          margin-top: 50px;
+          margin: 30px;
           padding: 10px 30px;
           font-size: 20px;
           color: rgb(61, 47, 8);
         }
+        
     }
   }
 }
