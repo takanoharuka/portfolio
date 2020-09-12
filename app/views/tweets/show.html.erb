@@ -12,8 +12,8 @@
     </div>
     <div class= "comment-box">
       <% if current_user %>
-        <%= form_with(model: [@tweet, @comment], local: true) do |form| %>
-          <%= form.text_area :comment, class:"comment-text", placeholder:"comments" %>
+        <%= form_with(model: [@tweet, @comment], local: true, id: "new_comment") do |form| %>
+          <%= form.text_area :comment, class:"comment-text", placeholder: "comments" %>
           <%= form.submit "SEND" , class:"send-btn"%>
         <% end %>
       <% else %>
