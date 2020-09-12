@@ -62,3 +62,4 @@ gem 'devise'
 gem "font-awesome-sass"
 gem 'pry-rails'
 gem 'jquery-rails'
+gem "aws-sdk-s3", require: false
