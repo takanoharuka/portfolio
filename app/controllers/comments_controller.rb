@@ -1,20 +1,15 @@
 class CommentsController < ApplicationController
 
   def create
-    comment = Comment.create(comment_params)
-    if comment.save
-      flash[:success] = "コメントしました"
-    else
-      flash[:success] = "コメントできませんでした"
+    @comment = Comment.create(comment_params)
+    respond_to do |format|
+      format.html {redirect_to tweet_path(params[:tweet_id])}
+      format.json
     end
   end
 
   def destroy
-    # tweet = Tweet.find_by(params[:tweet_id])
-    # comment = tweet.comments.find_by(id: params[:id])
-    # # binding.pry
-    # comment.destroy
-    Comment.find_by(id: params[:id], tweet_id: params[:tweet_id]).destroy
+    @comments = Comment.find_by(id: params[:id], tweet_id: params[:tweet_id]).destroy
     # redirect_to tweet_path
     
   end

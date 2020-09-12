@@ -50,9 +50,9 @@ Things you may want to cover:
 
 |Column|Type|Option|
 |------|----|------|
-|comment|text||
-|user_id|integer||
-|tweet_id|integer||
+|comment|text|null: false|
+|user_id|integer|null: false, foreign_key: true|
+|tweet_id|integer|null: false, foreign_key: true|
 
 - belongs_to: user
 - belongs_to: tweet
