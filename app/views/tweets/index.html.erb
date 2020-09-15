@@ -10,11 +10,12 @@
   <% end %>
   <div class= "tweets-contents">
     <ul class= "tweets-lists">
+    
     <% @tweets.each do |tweet| %>
       <li class= "lists">
         <%= link_to tweet_path(tweet.id) do %>
         <div class= "tweets-image-contents">
-          <%= image_tag tweet.image, class: "tweet-image"%>
+          <%= image_tag tweet.image, class: "tweet-image" if tweet.image.present? %>
             <div class= "show">
               <% if user_signed_in? && current_user.id == tweet.user_id %>
                 <span class="fas fa-angle-double-down icon"></span>
@@ -40,6 +41,7 @@
         <% end %>
       </li>
     <% end %>
+
     </ul>
   </div>
   <div class= "tweet-btn">
