@@ -3,6 +3,8 @@
 ## Application Name
   SHARES
 
+  ![ProtectTheEarth](https://i.gyazo.com/b56d8da7b801728a0ef5f174c0c64ee3.gif)
+
 ## Application Overview
   このアプリケーションは、地球環境問題についての記事を共有する事ができます。<br>
   ログインしたユーザーは記事を投稿する事ができ、記事を投稿したユーザーのみ編集・削除機能が利用できます。<br>
