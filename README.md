@@ -35,6 +35,8 @@ Ruby/Ruby on Rails/JavaScript/MySQL/Github/Heroku/Visual Studio Code/AWS S3
 4. 投稿した画像はトップページに一覧表示されます
 5. トップページから画像をクリックすると詳細ページに遷移します
 
+![gif画像](https://i.gyazo.com/b779276550852ce1c29a4e9769527c40.mp4)
+
 ## Implementation function
 ・ ユーザーログイン/ログアウト機能<br>
 ・ 記事投稿機能 <br>
