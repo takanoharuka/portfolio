@@ -38,10 +38,14 @@ Ruby/Ruby on Rails/JavaScript/MySQL/Github/Heroku/Visual Studio Code/AWS S3
 3. 商品画像・タイトル・記事内容を入力します
 
 ![text](https://i.gyazo.com/ad08d0eb2e8caf5e2680dfe7bdb02a0c.png)
+
 4. 投稿した画像はトップページに一覧表示されます
+
+![text](https://i.gyazo.com/a41db4bc8e1b7118f6cfad2a07153769.jpg)
+
 5. トップページから画像をクリックすると詳細ページに遷移します
 
-
+![text](https://i.gyazo.com/76bad856c99724e2f4f91d7ffd9ce3fb.jpg)
 
 ## Implementation function
 ・ ユーザーログイン/ログアウト機能<br>
