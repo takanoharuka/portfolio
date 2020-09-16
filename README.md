@@ -6,8 +6,7 @@
 ## Application Overview
   このアプリケーションは、地球環境問題についての記事を共有する事ができます。
   ログインしたユーザーは記事を投稿する事ができ、記事を投稿したユーザーのみ
-  編集・削除機能が利用できます。また記事の詳細ページに遷移すると記事にコメント
-  する事ができます。
+  編集・削除機能が利用できます。また記事の詳細ページに遷移すると記事にコメントする事ができます。
   検索欄でキーワード検索をするとキーワードに該当する記事の一覧が表示されます。
 
 ## URL
@@ -21,11 +20,12 @@
 * mail address: sample2@sample.com
 * password: sample2
 
+
 ## Development environment
 Ruby/Ruby on Rails/JavaScript/MySQL/Github/Heroku/Visual Studio Code/AWS S3
 
 ## Application How To Use
-・ WebブラウザGoogle Chromeの最新版を利用してアクセスしてください。
+・ WebブラウザGoogle Chromeの最新版を利用してアクセスしてください。<br>
 ・ 接続先およびログイン情報については、上記の通りです。
 1. テストアカウントでログイン
 2. トップページからNEW POSTボタンを押下
@@ -36,7 +36,7 @@ Ruby/Ruby on Rails/JavaScript/MySQL/Github/Heroku/Visual Studio Code/AWS S3
 ## Implementation function
 ・ ユーザーログイン/ログアウト機能
 ・ 記事投稿機能
-・ 記事削除機能/編集機能
+・ 記事削除機能/編集機能 <br>
 ・ コメント機能（非同期通信）/コメント削除機能
 ・ 記事検索機能
 
@@ -46,10 +46,11 @@ Ruby/Ruby on Rails/JavaScript/MySQL/Github/Heroku/Visual Studio Code/AWS S3
 ・ マイページ作成
 
 ##  Aimed problem solution
-今現在世界的な問題となっている地球環境問題について何か考えるきっかけになればと思い
-記事共有アプリを開発しました。
-アプリの問題点としてheroku上で扱う画像ファイルはアプリが再起動する度に消えてしまう使用の為、画像を共有するアプリとして、使用上問題と考えました。そこでAWSのS3に画像を保存する使用に変更しました。
+今現在世界的な問題となっている地球環境問題について何か考えるきっかけになればと思い<br>
+記事共有アプリを開発しました。<br>
+アプリの問題点としてheroku上で扱う画像ファイルはアプリが再起動する度に消えてしまう使用の為、画像を共有するアプリとして、使用上問題と考えました。そこでAWSのS3に画像を保存する使用に変更しました。<br>
 これからの課題点としてユーザーが記事を共有しやすくする為、記事投稿の際のタグ付け機能やいいね機能などの機能を解決していきたいと考えています。
+
 
 
 
