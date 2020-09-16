@@ -1,27 +1,57 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Application Name
+  SHARES
 
-Things you may want to cover:
+## Application Overview
+  このアプリケーションは、地球環境問題についての記事を共有する事ができます。
+  ログインしたユーザーは記事を投稿する事ができ、記事を投稿したユーザーのみ
+  編集・削除機能が利用できます。また記事の詳細ページに遷移すると記事にコメント
+  する事ができます。
+  検索欄でキーワード検索をするとキーワードに該当する記事の一覧が表示されます。
 
-* Ruby version
+## URL
+  https://portfolio-27873.herokuapp.com/
 
-* System dependencies
+## ID/PASS
+* ID: haruka
+* Pass: 1215
 
-* Configuration
+## Test Account
+* mail address: sample2@sample.com
+* password: sample2
 
-* Database creation
+## Development environment
+Ruby/Ruby on Rails/JavaScript/MySQL/Github/Heroku/Visual Studio Code/AWS S3
 
-* Database initialization
+## Application How To Use
+・ WebブラウザGoogle Chromeの最新版を利用してアクセスしてください。
+・ 接続先およびログイン情報については、上記の通りです。
+1. テストアカウントでログイン
+2. トップページからNEW POSTボタンを押下
+3. 商品画像・タイトル・記事内容を入力します
+4. 投稿した画像はトップページに一覧表示されます
+5. トップページから画像をクリックすると詳細ページに遷移します
 
-* How to run the test suite
+## Implementation function
+・ ユーザーログイン/ログアウト機能
+・ 記事投稿機能
+・ 記事削除機能/編集機能
+・ コメント機能（非同期通信）/コメント削除機能
+・ 記事検索機能
 
-* Services (job queues, cache servers, search engines, etc.)
+## Features to be implemented
+・ タグ付機能
+・ いいね機能
+・ マイページ作成
 
-* Deployment instructions
+##  Aimed problem solution
+今現在世界的な問題となっている地球環境問題について何か考えるきっかけになればと思い
+記事共有アプリを開発しました。
+アプリの問題点としてheroku上で扱う画像ファイルはアプリが再起動する度に消えてしまう使用の為、画像を共有するアプリとして、使用上問題と考えました。そこでAWSのS3に画像を保存する使用に変更しました。
+これからの課題点としてユーザーが記事を共有しやすくする為、記事投稿の際のタグ付け機能やいいね機能などの機能を解決していきたいと考えています。
 
-* ...
+
 
 ## userテーブル
 
