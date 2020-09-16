@@ -36,6 +36,9 @@ Ruby/Ruby on Rails/JavaScript/MySQL/Github/Heroku/Visual Studio Code/AWS S3
 
 2. トップページからNEW POSTボタンを押下
 3. 商品画像・タイトル・記事内容を入力します
+
+![ツイート投稿]（https://i.gyazo.com/ad08d0eb2e8caf5e2680dfe7bdb02a0c.png）
+
 4. 投稿した画像はトップページに一覧表示されます
 5. トップページから画像をクリックすると詳細ページに遷移します
 
