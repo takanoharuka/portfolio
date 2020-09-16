@@ -32,7 +32,7 @@ Ruby/Ruby on Rails/JavaScript/MySQL/Github/Heroku/Visual Studio Code/AWS S3
 
 1. テストアカウントでログイン
 
-![ログイン](https://gyazo.com/207cf927891ee1e91ec15d8352c1c2f6)
+![ログイン](https://i.gyazo.com/207cf927891ee1e91ec15d8352c1c2f6.png)
 
 2. トップページからNEW POSTボタンを押下
 3. 商品画像・タイトル・記事内容を入力します
